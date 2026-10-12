@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)file:///C:/Users/User/Downloads/mesabyte_digital_menu_self_service.html -->
+<html lang="pt-BR" class="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MesaByte | Cardápio Digital &amp; Autoatendimento</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="./MesaByte _ Cardápio Digital &amp; Autoatendimento_files/saved_resource"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#09090b',
+                        cardBg: '#18181b',
+                        brandPurple: '#7c3aed',
+                        brandIndigo: '#4f46e5',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="./MesaByte _ Cardápio Digital &amp; Autoatendimento_files/css2" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="./MesaByte _ Cardápio Digital &amp; Autoatendimento_files/lucide@latest"></script>
+    <!-- Alpine.js -->
+    <script defer="" src="./MesaByte _ Cardápio Digital &amp; Autoatendimento_files/cdn.min.js.download"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #09090b;
+            color: #f4f4f5;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(24, 24, 27, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-header {
+            background: rgba(9, 9, 11, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        .animate-glow {
+            animation: pulseGlow 4s ease-in-out infinite;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Plus Jakarta Sans", sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-10{bottom:-2.5rem}.-right-10{right:-2.5rem}.bottom-10{bottom:2.5rem}.left-1\/4{left:25%}.left-4{left:1rem}.right-0{right:0px}.right-10{right:2.5rem}.right-5{right:1.25rem}.top-0{top:0px}.top-3\.5{top:0.875rem}.top-5{top:1.25rem}.bottom-3{bottom:0.75rem}.bottom-4{bottom:1rem}.left-3{left:0.75rem}.right-3{right:0.75rem}.right-4{right:1rem}.top-3{top:0.75rem}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mb-1{margin-bottom:0.25rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-60{height:15rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-96{height:24rem}.h-full{height:100%}.h-44{height:11rem}.max-h-\[45vh\]{max-height:45vh}.max-h-\[90vh\]{max-height:90vh}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-40{width:10rem}.w-5{width:1.25rem}.w-60{width:15rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-96{width:24rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.flex-grow{flex-grow:1}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-1{gap:0.25rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.rounded-t-3xl{border-top-left-radius:1.5rem;border-top-right-radius:1.5rem}.rounded-bl-full{border-bottom-left-radius:9999px}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-amber-500\/20{border-color:rgb(245 158 11 / 0.2)}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-emerald-500\/20{border-color:rgb(16 185 129 / 0.2)}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-indigo-500\/20{border-color:rgb(99 102 241 / 0.2)}.border-indigo-500\/30{border-color:rgb(99 102 241 / 0.3)}.border-indigo-500\/40{border-color:rgb(99 102 241 / 0.4)}.border-zinc-800{--tw-border-opacity:1;border-color:rgb(39 39 42 / var(--tw-border-opacity, 1))}.border-indigo-400\/30{border-color:rgb(129 140 248 / 0.3)}.border-indigo-500{--tw-border-opacity:1;border-color:rgb(99 102 241 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-zinc-700{--tw-border-opacity:1;border-color:rgb(63 63 70 / var(--tw-border-opacity, 1))}.border-zinc-800\/80{border-color:rgb(39 39 42 / 0.8)}.bg-amber-500\/10{background-color:rgb(245 158 11 / 0.1)}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/10{background-color:rgb(16 185 129 / 0.1)}.bg-emerald-600\/20{background-color:rgb(5 150 105 / 0.2)}.bg-indigo-500\/10{background-color:rgb(99 102 241 / 0.1)}.bg-indigo-600\/15{background-color:rgb(79 70 229 / 0.15)}.bg-indigo-600\/20{background-color:rgb(79 70 229 / 0.2)}.bg-violet-600\/15{background-color:rgb(124 58 237 / 0.15)}.bg-zinc-900{--tw-bg-opacity:1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.bg-zinc-900\/90{background-color:rgb(24 24 27 / 0.9)}.bg-indigo-600\/90{background-color:rgb(79 70 229 / 0.9)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-zinc-800{--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity, 1))}.bg-zinc-900\/80{background-color:rgb(24 24 27 / 0.8)}.bg-zinc-950\/60{background-color:rgb(9 9 11 / 0.6)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-tl{background-image:linear-gradient(to top left, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-indigo-500\/20{--tw-gradient-from:rgb(99 102 241 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(99 102 241 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-600{--tw-gradient-from:#4f46e5 var(--tw-gradient-from-position);--tw-gradient-to:rgb(79 70 229 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-600\/30{--tw-gradient-from:rgb(79 70 229 / 0.3) var(--tw-gradient-from-position);--tw-gradient-to:rgb(79 70 229 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-zinc-950{--tw-gradient-from:#09090b var(--tw-gradient-from-position);--tw-gradient-to:rgb(9 9 11 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-zinc-200{--tw-gradient-to:rgb(228 228 231 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #e4e4e7 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-indigo-300{--tw-gradient-to:#a5b4fc var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.to-violet-600{--tw-gradient-to:#7c3aed var(--tw-gradient-to-position)}.to-violet-600\/10{--tw-gradient-to:rgb(124 58 237 / 0.1) var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{object-fit:cover}.p-0{padding:0px}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-1{padding:0.25rem}.p-3\.5{padding:0.875rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.pb-24{padding-bottom:6rem}.pb-4{padding-bottom:1rem}.pl-11{padding-left:2.75rem}.pr-1{padding-right:0.25rem}.pr-4{padding-right:1rem}.pt-1{padding-top:0.25rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pr-3{padding-right:0.75rem}.pt-3{padding-top:0.75rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-\[10px\]{font-size:10px}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-zinc-300{--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.text-zinc-400{--tw-text-opacity:1;color:rgb(161 161 170 / var(--tw-text-opacity, 1))}.text-zinc-500{--tw-text-opacity:1;color:rgb(113 113 122 / var(--tw-text-opacity, 1))}.text-indigo-200{--tw-text-opacity:1;color:rgb(199 210 254 / var(--tw-text-opacity, 1))}.placeholder-zinc-500::placeholder{--tw-placeholder-opacity:1;color:rgb(113 113 122 / var(--tw-placeholder-opacity, 1))}.placeholder-zinc-600::placeholder{--tw-placeholder-opacity:1;color:rgb(82 82 91 / var(--tw-placeholder-opacity, 1))}.accent-indigo-600{accent-color:#4f46e5}.opacity-80{opacity:0.8}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-indigo-500\/30{--tw-shadow-color:rgb(99 102 241 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.shadow-indigo-600\/30{--tw-shadow-color:rgb(79 70 229 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.shadow-indigo-600\/50{--tw-shadow-color:rgb(79 70 229 / 0.5);--tw-shadow:var(--tw-shadow-colored)}.blur-2xl{--tw-blur:blur(40px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.selection\:bg-indigo-500 *::selection{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-indigo-500::selection{--tw-bg-opacity:1;background-color:rgb(99 102 241 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.before\:absolute::before{content:var(--tw-content);position:absolute}.before\:bottom-2::before{content:var(--tw-content);bottom:0.5rem}.before\:left-3\.5::before{content:var(--tw-content);left:0.875rem}.before\:top-2::before{content:var(--tw-content);top:0.5rem}.before\:w-0\.5::before{content:var(--tw-content);width:0.125rem}.before\:bg-zinc-800::before{content:var(--tw-content);--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity, 1))}.hover\:-translate-y-1:hover{--tw-translate-y:-0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-\[1\.02\]:hover{--tw-scale-x:1.02;--tw-scale-y:1.02;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-zinc-700:hover{--tw-border-opacity:1;border-color:rgb(63 63 70 / var(--tw-border-opacity, 1))}.hover\:border-indigo-500\/40:hover{border-color:rgb(99 102 241 / 0.4)}.hover\:bg-zinc-800:hover{--tw-bg-opacity:1;background-color:rgb(39 39 42 / var(--tw-bg-opacity, 1))}.hover\:from-indigo-500:hover{--tw-gradient-from:#6366f1 var(--tw-gradient-from-position);--tw-gradient-to:rgb(99 102 241 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-violet-500:hover{--tw-gradient-to:#8b5cf6 var(--tw-gradient-to-position)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-zinc-300:hover{--tw-text-opacity:1;color:rgb(212 212 216 / var(--tw-text-opacity, 1))}.hover\:text-zinc-200:hover{--tw-text-opacity:1;color:rgb(228 228 231 / var(--tw-text-opacity, 1))}.focus\:border-indigo-500:focus{--tw-border-opacity:1;border-color:rgb(99 102 241 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:max-w-lg{max-width:32rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:items-center{align-items:center}.sm\:rounded-3xl{border-radius:1.5rem}.sm\:p-4{padding:1rem}}@media (min-width: 768px){.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:p-8{padding:2rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}}</style></head>
+<body x-data="mesaByteApp()" x-init="init()" class="min-h-screen pb-24 selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient background glowing blobs -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none animate-glow"></div>
+    <div class="fixed bottom-10 right-10 w-96 h-96 bg-violet-600/15 rounded-full blur-3xl pointer-events-none animate-glow" style="animation-delay: 2s;"></div>
+
+    <!-- WELCOME / QR CODE SIMULATION MODAL -->
+    <div x-show="showWelcomeModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md" x-transition.opacity="" style="display: none;">
+        <div class="glass-panel w-full max-w-md rounded-3xl p-6 md:p-8 shadow-2xl relative overflow-hidden border border-indigo-500/30">
+            <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-indigo-500/20 to-transparent rounded-bl-full pointer-events-none"></div>
+            
+            <div class="text-center mb-6">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-tr from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-500/30 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="utensils" aria-hidden="true" class="lucide lucide-utensils w-8 h-8"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path><path d="M7 2v20"></path><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path></svg>
+                </div>
+                <h1 class="text-2xl font-bold tracking-tight text-white">MesaByte Autoatendimento</h1>
+                <p class="text-sm text-zinc-400 mt-1">Simulação de Leitura de QR Code</p>
+            </div>
+
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-2">Seu Nome / Apelido</label>
+                    <input type="text" x-model="customerName" placeholder="Ex: Carlos Silva" class="w-full bg-zinc-900/90 border border-zinc-800 rounded-xl px-4 py-3 text-white placeholder-zinc-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mb-2">Mesa Selecionada</label>
+                    <div class="flex items-center justify-between bg-zinc-900/90 border border-zinc-800 rounded-xl px-4 py-3 text-white">
+                        <span class="flex items-center gap-2 font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin w-4 h-4 text-indigo-400"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Mesa 04 — Salão Principal
+                        </span>
+                        <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-1 rounded-full font-semibold">Ativa</span>
+                    </div>
+                </div>
+
+                <button @click="enterApp()" class="w-full mt-2 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-semibold py-3.5 px-6 rounded-xl shadow-lg shadow-indigo-600/30 transition-all transform active:scale-95 flex items-center justify-center gap-2">
+                    <span>Acessar Cardápio Digital</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+            </div>
+            
+            <p class="text-center text-xs text-zinc-500 mt-6">Projeto Acadêmico • Apresentação 2026</p>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-40 glass-header px-4 py-3.5 transition-all">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-600 flex items-center justify-center text-white shadow-md shadow-indigo-500/30">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" aria-hidden="true" class="lucide lucide-zap w-5 h-5"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"></path></svg>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight bg-gradient-to-r from-white via-zinc-200 to-indigo-300 bg-clip-text text-transparent">MesaByte</span>
+                    <div class="flex items-center gap-1.5 text-xs text-zinc-400">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span>Mesa 04 • <span x-text="customerName || 'Cliente'">Carlos Silva</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <!-- Waiter Call Button -->
+                <button @click="openWaiterModal = true" class="px-3 py-2 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 text-zinc-300 hover:text-white text-xs font-semibold flex items-center gap-1.5 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bell" aria-hidden="true" class="lucide lucide-bell w-3.5 h-3.5 text-amber-400"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path></svg>
+                    <span class="hidden sm:inline">Chamar Garçom</span>
+                </button>
+
+                <!-- Active Order Status Button (if order placed) -->
+                <template x-if="orders.length &gt; 0"></template>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-4xl mx-auto px-4 pt-6 space-y-6">
+
+        <!-- Banner / Hero Card -->
+        <div class="relative rounded-3xl overflow-hidden glass-panel p-6 md:p-8 border border-indigo-500/20">
+            <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-gradient-to-tl from-indigo-600/30 to-violet-600/10 rounded-full blur-2xl pointer-events-none"></div>
+            <div class="relative z-10 max-w-lg">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" aria-hidden="true" class="lucide lucide-sparkles w-3.5 h-3.5"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg> Experiência Gastronômica Inteligente
+                </span>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">O que você vai saborear hoje?</h2>
+                <p class="text-sm text-zinc-400 mt-2">Peça direto da mesa com inteligência artificial, personalização completa e acompanhamento em tempo real.</p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="mt-6 relative">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" aria-hidden="true" class="lucide lucide-search absolute left-4 top-3.5 w-4 h-4 text-zinc-500"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+                <input type="text" x-model="searchQuery" placeholder="Buscar pratos, ingredientes ou bebidas..." class="w-full bg-zinc-900/90 border border-zinc-800 rounded-2xl pl-11 pr-4 py-3 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-indigo-500 transition-colors shadow-inner">
+            </div>
+        </div>
+
+        <!-- Categories Horizontal Scroll -->
+        <div class="flex items-center gap-2 overflow-x-auto hide-scrollbar py-1">
+            <template x-for="cat in categories" :key="cat.id"></template><button @click="selectedCategory = cat.id" :class="selectedCategory === cat.id ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-600/30 border-transparent' : 'bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200'" class="px-4 py-2.5 rounded-2xl text-xs font-semibold whitespace-nowrap border transition-all flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-600/30 border-transparent">
+                    <span x-text="cat.icon">🍽️</span>
+                    <span x-text="cat.name">Todos</span>
+                </button><button @click="selectedCategory = cat.id" :class="selectedCategory === cat.id ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-600/30 border-transparent' : 'bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200'" class="px-4 py-2.5 rounded-2xl text-xs font-semibold whitespace-nowrap border transition-all flex items-center gap-2 bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200">
+                    <span x-text="cat.icon">🥗</span>
+                    <span x-text="cat.name">Entradas</span>
+                </button><button @click="selectedCategory = cat.id" :class="selectedCategory === cat.id ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-600/30 border-transparent' : 'bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200'" class="px-4 py-2.5 rounded-2xl text-xs font-semibold whitespace-nowrap border transition-all flex items-center gap-2 bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200">
+                    <span x-text="cat.icon">🍔</span>
+                    <span x-text="cat.name">Burgers</span>
+                </button><button @click="selectedCategory = cat.id" :class="selectedCategory === cat.id ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-600/30 border-transparent' : 'bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200'" class="px-4 py-2.5 rounded-2xl text-xs font-semibold whitespace-nowrap border transition-all flex items-center gap-2 bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200">
+                    <span x-text="cat.icon">🥩</span>
+                    <span x-text="cat.name">Principais</span>
+                </button><button @click="selectedCategory = cat.id" :class="selectedCategory === cat.id ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-600/30 border-transparent' : 'bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200'" class="px-4 py-2.5 rounded-2xl text-xs font-semibold whitespace-nowrap border transition-all flex items-center gap-2 bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200">
+                    <span x-text="cat.icon">🍹</span>
+                    <span x-text="cat.name">Bebidas</span>
+                </button><button @click="selectedCategory = cat.id" :class="selectedCategory === cat.id ? 'bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-lg shadow-indigo-600/30 border-transparent' : 'bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200'" class="px-4 py-2.5 rounded-2xl text-xs font-semibold whitespace-nowrap border transition-all flex items-center gap-2 bg-zinc-900/80 text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-zinc-200">
+                    <span x-text="cat.icon">🍰</span>
+                    <span x-text="cat.name">Sobremesas</span>
+                </button>
+        </div>
+
+        <!-- PRODUCTS GRID -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <template x-for="product in filteredProducts" :key="product.id"></template><div @click="openCustomization(product)" class="glass-panel rounded-3xl overflow-hidden group cursor-pointer hover:border-indigo-500/40 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="relative h-44 overflow-hidden bg-zinc-900">
+                        <img :src="product.image" :alt="product.name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300/18181b/71717a?text=MesaByte'" src="./MesaByte _ Cardápio Digital &amp; Autoatendimento_files/photo-1568901346375-23c9450c58cd" alt="MesaByte Truffled Burger">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80"></div>
+                        
+                        <!-- Badge -->
+                        <template x-if="product.badge"></template><span class="absolute top-3 left-3 bg-indigo-600/90 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md uppercase tracking-wider" x-text="product.badge">Mais Vendido</span>
+
+                        <!-- Price Tag -->
+                        <div class="absolute bottom-3 right-3 bg-zinc-900/90 backdrop-blur-md border border-zinc-700 text-white font-bold text-sm px-3 py-1 rounded-xl shadow-lg">
+                            <span x-text="formatMoney(product.price)">R$&nbsp;54,90</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <h3 class="font-bold text-white group-hover:text-indigo-400 transition-colors text-base" x-text="product.name">MesaByte Truffled Burger</h3>
+                            </div>
+                            <p class="text-xs text-zinc-400 line-clamp-2 mt-1" x-text="product.description">Blend wagyu 180g, queijo brie maçaricado, bacon crocante, rúcula orgânica e maionese de trufas negras no pão brioche artesanal.</p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-400">
+                            <span class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5 text-zinc-500"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                                <span x-text="product.time">15-20 min</span>
+                            </span>
+                            <span class="text-indigo-400 font-semibold group-hover:underline flex items-center gap-1">
+                                Personalizar <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plus" aria-hidden="true" class="lucide lucide-plus w-3.5 h-3.5"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div><div @click="openCustomization(product)" class="glass-panel rounded-3xl overflow-hidden group cursor-pointer hover:border-indigo-500/40 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="relative h-44 overflow-hidden bg-zinc-900">
+                        <img :src="product.image" :alt="product.name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300/18181b/71717a?text=MesaByte'" src="./MesaByte _ Cardápio Digital &amp; Autoatendimento_files/photo-1586190848861-99aa4a171e90" alt="Cyber Bacon Crispy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80"></div>
+                        
+                        <!-- Badge -->
+                        <template x-if="product.badge"></template><span class="absolute top-3 left-3 bg-indigo-600/90 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md uppercase tracking-wider" x-text="product.badge">Destaque</span>
+
+                        <!-- Price Tag -->
+                        <div class="absolute bottom-3 right-3 bg-zinc-900/90 backdrop-blur-md border border-zinc-700 text-white font-bold text-sm px-3 py-1 rounded-xl shadow-lg">
+                            <span x-text="formatMoney(product.price)">R$&nbsp;46,90</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <h3 class="font-bold text-white group-hover:text-indigo-400 transition-colors text-base" x-text="product.name">Cyber Bacon Crispy</h3>
+                            </div>
+                            <p class="text-xs text-zinc-400 line-clamp-2 mt-1" x-text="product.description">Duplo smash burger 100g, cheddar cremoso inglês, cebola caramelizada no bourbon e bacon extra crispy.</p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-400">
+                            <span class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5 text-zinc-500"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                                <span x-text="product.time">12-18 min</span>
+                            </span>
+                            <span class="text-indigo-400 font-semibold group-hover:underline flex items-center gap-1">
+                                Personalizar <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plus" aria-hidden="true" class="lucide lucide-plus w-3.5 h-3.5"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div><div @click="openCustomization(product)" class="glass-panel rounded-3xl overflow-hidden group cursor-pointer hover:border-indigo-500/40 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="relative h-44 overflow-hidden bg-zinc-900">
+                        <img :src="product.image" :alt="product.name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300/18181b/71717a?text=MesaByte'" src="./MesaByte _ Cardápio Digital &amp; Autoatendimento_files/photo-1558030006-450675393462" alt="Entrecôte com Fritas Trufadas">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80"></div>
+                        
+                        <!-- Badge -->
+                        <template x-if="product.badge"></template><span class="absolute top-3 left-3 bg-indigo-600/90 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md uppercase tracking-wider" x-text="product.badge">Chef Choice</span>
+
+                        <!-- Price Tag -->
+                        <div class="absolute bottom-3 right-3 bg-zinc-900/90 backdrop-blur-md border border-zinc-700 text-white font-bold text-sm px-3 py-1 rounded-xl shadow-lg">
+                            <span x-text="formatMoney(product.price)">R$&nbsp;89,90</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <h3 class="font-bold text-white group-hover:text-indigo-400 transition-colors text-base" x-text="product.name">Entrecôte com Fritas Trufadas</h3>
+                            </div>
+                            <p class="text-xs text-zinc-400 line-clamp-2 mt-1" x-text="product.description">Corte noble de 300g grelhado ao ponto, acompanhado de batatas rústicas com azeite trufado e queijo parmesão gratinado.</p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-400">
+                            <span class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5 text-zinc-500"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                                <span x-text="product.time">20-25 min</span>
+                            </span>
+                            <span class="text-indigo-400 font-semibold group-hover:underline flex items-center gap-1">
+                                Personalizar <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plus" aria-hidden="true" class="lucide lucide-plus w-3.5 h-3.5"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div><div @click="openCustomization(product)" class="glass-panel rounded-3xl overflow-hidden group cursor-pointer hover:border-indigo-500/40 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="relative h-44 overflow-hidden bg-zinc-900">
+                        <img :src="product.image" :alt="product.name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300/18181b/71717a?text=MesaByte'" src="./MesaByte _ Cardápio Digital &amp; Autoatendimento_files/photo-1534422298391-e4f8c172dddb" alt="Tartare de Salmão Fresco">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80"></div>
+                        
+                        <!-- Badge -->
+                        <template x-if="product.badge"></template><span class="absolute top-3 left-3 bg-indigo-600/90 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md uppercase tracking-wider" x-text="product.badge">Novo</span>
+
+                        <!-- Price Tag -->
+                        <div class="absolute bottom-3 right-3 bg-zinc-900/90 backdrop-blur-md border border-zinc-700 text-white font-bold text-sm px-3 py-1 rounded-xl shadow-lg">
+                            <span x-text="formatMoney(product.price)">R$&nbsp;42,00</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <h3 class="font-bold text-white group-hover:text-indigo-400 transition-colors text-base" x-text="product.name">Tartare de Salmão Fresco</h3>
+                            </div>
+                            <p class="text-xs text-zinc-400 line-clamp-2 mt-1" x-text="product.description">Salmão batido na ponta da faca, abacate cremoso, chips de batata doce artesanais e emulsão de limão siciliano.</p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-400">
+                            <span class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5 text-zinc-500"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                                <span x-text="product.time">10 min</span>
+                            </span>
+                            <span class="text-indigo-400 font-semibold group-hover:underline flex items-center gap-1">
+                                Personalizar <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plus" aria-hidden="true" class="lucide lucide-plus w-3.5 h-3.5"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div><div @click="openCustomization(product)" class="glass-panel rounded-3xl overflow-hidden group cursor-pointer hover:border-indigo-500/40 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="relative h-44 overflow-hidden bg-zinc-900">
+                        <img :src="product.image" :alt="product.name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300/18181b/71717a?text=MesaByte'" src="./MesaByte _ Cardápio Digital &amp; Autoatendimento_files/photo-1514362545857-3bc16c4c7d1b" alt="Gin Tônica Botânica Red Berries">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80"></div>
+                        
+                        <!-- Badge -->
+                        <template x-if="product.badge"></template><span class="absolute top-3 left-3 bg-indigo-600/90 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md uppercase tracking-wider" x-text="product.badge">Drink do Dia</span>
+
+                        <!-- Price Tag -->
+                        <div class="absolute bottom-3 right-3 bg-zinc-900/90 backdrop-blur-md border border-zinc-700 text-white font-bold text-sm px-3 py-1 rounded-xl shadow-lg">
+                            <span x-text="formatMoney(product.price)">R$&nbsp;36,00</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <h3 class="font-bold text-white group-hover:text-indigo-400 transition-colors text-base" x-text="product.name">Gin Tônica Botânica Red Berries</h3>
+                            </div>
+                            <p class="text-xs text-zinc-400 line-clamp-2 mt-1" x-text="product.description">Gin premium importado, tônica artesanal, infusão de frutas vermelhas silvestres, zimbro e alecrim fresco.</p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-400">
+                            <span class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5 text-zinc-500"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                                <span x-text="product.time">5 min</span>
+                            </span>
+                            <span class="text-indigo-400 font-semibold group-hover:underline flex items-center gap-1">
+                                Personalizar <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plus" aria-hidden="true" class="lucide lucide-plus w-3.5 h-3.5"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div><div @click="openCustomization(product)" class="glass-panel rounded-3xl overflow-hidden group cursor-pointer hover:border-indigo-500/40 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div class="relative h-44 overflow-hidden bg-zinc-900">
+                        <img :src="product.image" :alt="product.name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x300/18181b/71717a?text=MesaByte'" src="./MesaByte _ Cardápio Digital &amp; Autoatendimento_files/photo-1533134242443-d4fd215305ad" alt="Cheesecake Red Velvet &amp; Frutas Vermelhas">
+                        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80"></div>
+                        
+                        <!-- Badge -->
+                        <template x-if="product.badge"></template><span class="absolute top-3 left-3 bg-indigo-600/90 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-md uppercase tracking-wider" x-text="product.badge">Imperdível</span>
+
+                        <!-- Price Tag -->
+                        <div class="absolute bottom-3 right-3 bg-zinc-900/90 backdrop-blur-md border border-zinc-700 text-white font-bold text-sm px-3 py-1 rounded-xl shadow-lg">
+                            <span x-text="formatMoney(product.price)">R$&nbsp;28,50</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 flex flex-col flex-grow justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <h3 class="font-bold text-white group-hover:text-indigo-400 transition-colors text-base" x-text="product.name">Cheesecake Red Velvet &amp; Frutas Vermelhas</h3>
+                            </div>
+                            <p class="text-xs text-zinc-400 line-clamp-2 mt-1" x-text="product.description">Base amanteigada crocante, creme aveludado de cream cheese e calda artesanal de frutas vermelhas frescas.</p>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-400">
+                            <span class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-3.5 h-3.5 text-zinc-500"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                                <span x-text="product.time">5 min</span>
+                            </span>
+                            <span class="text-indigo-400 font-semibold group-hover:underline flex items-center gap-1">
+                                Personalizar <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plus" aria-hidden="true" class="lucide lucide-plus w-3.5 h-3.5"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Empty state -->
+        <template x-if="filteredProducts.length === 0"></template>
+    </main>
+
+    <!-- CUSTOMIZATION MODAL -->
+    <div x-show="showCustomModal" class="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-md" x-transition.opacity="" style="display: none;">
+        <div class="glass-panel w-full sm:max-w-lg rounded-t-3xl sm:rounded-3xl p-6 max-h-[90vh] overflow-y-auto shadow-2xl relative border border-indigo-500/30" @click.away="closeCustomModal()">
+            <template x-if="activeProduct"></template>
+        </div>
+    </div>
+
+    <!-- FLOATING CART BAR -->
+    <template x-if="cart.length &gt; 0"></template><div class="fixed bottom-4 left-4 right-4 max-w-xl mx-auto z-40">
+            <div @click="showCartDrawer = true" class="bg-gradient-to-r from-indigo-600 to-violet-600 rounded-2xl p-4 shadow-2xl shadow-indigo-600/50 text-white flex items-center justify-between cursor-pointer transform hover:scale-[1.02] transition-all border border-indigo-400/30">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center font-bold text-white" x-text="cartTotalItems">1</div>
+                    <div>
+                        <div class="font-bold text-sm">Ver Carrinho &amp; Pedido</div>
+                        <div class="text-xs text-indigo-200" x-text="cart.length + (cart.length === 1 ? ' item selecionado' : ' itens selecionados')">1 item selecionado</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="font-extrabold text-base" x-text="formatMoney(cartTotalPrice)">R$&nbsp;54,90</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-up" aria-hidden="true" class="lucide lucide-chevron-up w-5 h-5"><path d="m18 15-6-6-6 6"></path></svg>
+                </div>
+            </div>
+        </div>
+
+    <!-- CART DRAWER / CHECKOUT -->
+    <div x-show="showCartDrawer" class="fixed inset-0 z-50 flex justify-end bg-black/80 backdrop-blur-md" x-transition.opacity="" style="display: none;">
+        <div class="glass-panel w-full max-w-md h-full flex flex-col justify-between p-6 overflow-y-auto shadow-2xl border-l border-indigo-500/30" @click.away="showCartDrawer = false">
+            <div>
+                <div class="flex items-center justify-between pb-4 border-b border-zinc-800">
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shopping-bag" aria-hidden="true" class="lucide lucide-shopping-bag w-5 h-5 text-indigo-400"><path d="M16 10a4 4 0 0 1-8 0"></path><path d="M3.103 6.034h17.794"></path><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path></svg>
+                        <h2 class="text-lg font-bold text-white">Seu Pedido na Mesa 04</h2>
+                    </div>
+                    <button @click="showCartDrawer = false" class="w-8 h-8 rounded-full bg-zinc-900 text-zinc-400 hover:text-white flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" aria-hidden="true" class="lucide lucide-x w-4 h-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                    </button>
+                </div>
+
+                <!-- Cart Items List -->
+                <div class="mt-6 space-y-4 max-h-[45vh] overflow-y-auto pr-1">
+                    <template x-for="(item, index) in cart" :key="index"></template><div class="bg-zinc-900/80 border border-zinc-800 rounded-2xl p-3.5 flex items-center justify-between">
+                            <div class="flex-grow pr-3">
+                                <div class="font-bold text-white text-sm" x-text="item.name">MesaByte Truffled Burger</div>
+                                <template x-if="item.notes"></template><div class="text-[11px] text-zinc-400 italic mt-0.5" x-text="'Obs: ' + item.notes">Obs: Ponto ao ponto</div>
+                                <div class="text-xs font-semibold text-indigo-400 mt-1" x-text="formatMoney(item.price * item.quantity)">R$&nbsp;54,90</div>
+                            </div>
+                            
+                            <div class="flex items-center gap-2 bg-zinc-950/60 rounded-xl p-1 border border-zinc-800">
+                                <button @click="updateCartQty(index, -1)" class="w-7 h-7 flex items-center justify-center text-zinc-400 hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="minus" aria-hidden="true" class="lucide lucide-minus w-3.5 h-3.5"><path d="M5 12h14"></path></svg>
+                                </button>
+                                <span class="text-xs font-bold text-white w-5 text-center" x-text="item.quantity">1</span>
+                                <button @click="updateCartQty(index, 1)" class="w-7 h-7 flex items-center justify-center text-zinc-400 hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="plus" aria-hidden="true" class="lucide lucide-plus w-3.5 h-3.5"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Payment & Tip options -->
+                <div class="mt-6 space-y-4 pt-4 border-t border-zinc-800">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-semibold text-zinc-400">Gorjeta do Garçom (10%)</span>
+                        <input type="checkbox" x-model="includeTip" class="w-4 h-4 accent-indigo-600 rounded">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-zinc-400 mb-2">Forma de Pagamento</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button @click="paymentMethod = 'pix'" :class="paymentMethod === 'pix' ? 'border-indigo-500 bg-indigo-500/10 text-white' : 'border-zinc-800 bg-zinc-900 text-zinc-400'" class="border rounded-xl py-2.5 text-xs font-semibold text-center transition-all border-indigo-500 bg-indigo-500/10 text-white">Pix</button>
+                            <button @click="paymentMethod = 'card'" :class="paymentMethod === 'card' ? 'border-indigo-500 bg-indigo-500/10 text-white' : 'border-zinc-800 bg-zinc-900 text-zinc-400'" class="border rounded-xl py-2.5 text-xs font-semibold text-center transition-all border-zinc-800 bg-zinc-900 text-zinc-400">Cartão Mesa</button>
+                            <button @click="paymentMethod = 'later'" :class="paymentMethod === 'later' ? 'border-indigo-500 bg-indigo-500/10 text-white' : 'border-zinc-800 bg-zinc-900 text-zinc-400'" class="border rounded-xl py-2.5 text-xs font-semibold text-center transition-all border-zinc-800 bg-zinc-900 text-zinc-400">Pagar Final</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Total & Send Button -->
+            <div class="pt-4 border-t border-zinc-800 space-y-3">
+                <div class="space-y-1.5 text-xs">
+                    <div class="flex justify-between text-zinc-400">
+                        <span>Subtotal</span>
+                        <span x-text="formatMoney(cartTotalPrice)">R$&nbsp;54,90</span>
+                    </div>
+                    <template x-if="includeTip"></template><div class="flex justify-between text-zinc-400">
+                            <span>Gorjeta (10%)</span>
+                            <span x-text="formatMoney(cartTotalPrice * 0.1)">R$&nbsp;5,49</span>
+                        </div>
+                    <div class="flex justify-between text-white font-extrabold text-base pt-1 border-t border-zinc-800">
+                        <span>Total Geral</span>
+                        <span class="text-indigo-400" x-text="formatMoney(finalTotalPrice)">R$&nbsp;60,39</span>
+                    </div>
+                </div>
+
+                <button @click="submitOrder()" class="w-full bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-indigo-600/30 transition-all flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="send" aria-hidden="true" class="lucide lucide-send w-4 h-4"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>
+                    <span>Enviar Pedido para a Cozinha</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ORDER TRACKING MODAL -->
+    <div x-show="showTrackingModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md" x-transition.opacity="" style="display: none;">
+        <div class="glass-panel w-full max-w-md rounded-3xl p-6 shadow-2xl relative border border-indigo-500/30">
+            <div class="flex items-center justify-between pb-4 border-b border-zinc-800 mb-6">
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" aria-hidden="true" class="lucide lucide-clock w-5 h-5 text-indigo-400"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                    <h2 class="text-lg font-bold text-white">Acompanhamento KDS</h2>
+                </div>
+                <button @click="showTrackingModal = false" class="w-8 h-8 rounded-full bg-zinc-900 text-zinc-400 hover:text-white flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" aria-hidden="true" class="lucide lucide-x w-4 h-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                </button>
+            </div>
+
+            <!-- Timeline -->
+            <div class="space-y-6 relative before:absolute before:left-3.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-zinc-800">
+                <!-- Step 1 -->
+                <div class="flex items-start gap-4 relative">
+                    <div :class="orderStatus &gt;= 1 ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/30' : 'bg-zinc-800 text-zinc-500'" class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold z-10 transition-colors bg-zinc-800 text-zinc-500">1</div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Pedido Recebido na Cozinha</h4>
+                        <p class="text-xs text-zinc-400 mt-0.5">O KDS MesaByte registrou o seu pedido com sucesso.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex items-start gap-4 relative">
+                    <div :class="orderStatus &gt;= 2 ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/30' : 'bg-zinc-800 text-zinc-500'" class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold z-10 transition-colors bg-zinc-800 text-zinc-500">2</div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Em Preparo na Cozinha</h4>
+                        <p class="text-xs text-zinc-400 mt-0.5">O chef já iniciou a preparação dos itens.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex items-start gap-4 relative">
+                    <div :class="orderStatus &gt;= 3 ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-600/30' : 'bg-zinc-800 text-zinc-500'" class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold z-10 transition-colors bg-zinc-800 text-zinc-500">3</div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Pronto / Servido na Mesa</h4>
+                        <p class="text-xs text-zinc-400 mt-0.5">Bom apetite! Pedido entregue na Mesa 04.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presentation Demo Controls -->
+            <div class="mt-8 pt-4 border-t border-zinc-800">
+                <span class="block text-[11px] font-semibold text-zinc-500 uppercase tracking-wider mb-2">Controle de Demonstração (Apresentação)</span>
+                <div class="grid grid-cols-3 gap-2">
+                    <button @click="orderStatus = 1" class="py-2 bg-zinc-900 border border-zinc-800 rounded-xl text-xs font-semibold text-zinc-300 hover:text-white">1. Recebido</button>
+                    <button @click="orderStatus = 2" class="py-2 bg-zinc-900 border border-zinc-800 rounded-xl text-xs font-semibold text-zinc-300 hover:text-white">2. Preparo</button>
+                    <button @click="orderStatus = 3" class="py-2 bg-emerald-600/20 border border-emerald-500/30 rounded-xl text-xs font-semibold text-emerald-300">3. Servido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WAITER CALL MODAL -->
+    <div x-show="openWaiterModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md" x-transition.opacity="" style="display: none;">
+        <div class="glass-panel w-full max-w-sm rounded-3xl p-6 shadow-2xl relative border border-amber-500/30">
+            <div class="text-center mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mx-auto mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bell" aria-hidden="true" class="lucide lucide-bell w-7 h-7"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path></svg>
+                </div>
+                <h3 class="text-lg font-bold text-white">Chamar Atendimento</h3>
+                <p class="text-xs text-zinc-400 mt-1">O garçom mais próximo da Mesa 04 será notificado imediatamente.</p>
+            </div>
+
+            <div class="space-y-2">
+                <button @click="callWaiterAction('Chamar Garçom')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white font-semibold py-3 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="user" aria-hidden="true" class="lucide lucide-user w-4 h-4 text-amber-400"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <span>Chamar Garçom na Mesa</span>
+                </button>
+                <button @click="callWaiterAction('Solicitar a Conta')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white font-semibold py-3 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="receipt" aria-hidden="true" class="lucide lucide-receipt w-4 h-4 text-emerald-400"><path d="M12 17V7"></path><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"></path><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"></path></svg>
+                    <span>Solicitar Fechamento da Conta</span>
+                </button>
+                <button @click="callWaiterAction('Pedir Auxílio com o Cardápio')" class="w-full bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white font-semibold py-3 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="help-circle" aria-hidden="true" class="lucide lucide-help-circle w-4 h-4 text-indigo-400"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>
+                    <span>Pedir Ajuda com o Aplicativo</span>
+                </button>
+            </div>
+
+            <button @click="openWaiterModal = false" class="w-full mt-4 text-xs font-semibold text-zinc-500 hover:text-zinc-300 text-center py-2">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div x-show="toastMessage" x-transition="" class="fixed top-5 right-5 z-50 bg-zinc-900 border border-indigo-500/40 text-white px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3" style="display: none;">
+        <div class="w-8 h-8 rounded-xl bg-indigo-600/20 text-indigo-400 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" aria-hidden="true" class="lucide lucide-check w-4 h-4"><path d="M20 6 9 17l-5-5"></path></svg>
+        </div>
+        <div>
+            <div class="text-xs font-bold">MesaByte Notificação</div>
+            <div class="text-xs text-zinc-400" x-text="toastMessage"></div>
+        </div>
+    </div>
+
+    <!-- APPLICATION SCRIPT -->
+    <script>
+        function mesaByteApp() {
+            return {
+                showWelcomeModal: true,
+                showCartDrawer: false,
+                showCustomModal: false,
+                showTrackingModal: false,
+                openWaiterModal: false,
+                customerName: 'Carlos Silva',
+                searchQuery: '',
+                selectedCategory: 'all',
+                activeProduct: null,
+                customQuantity: 1,
+                customNotes: '',
+                includeTip: true,
+                paymentMethod: 'pix',
+                toastMessage: '',
+                orderStatus: 0,
+                
+                categories: [
+                    { id: 'all', name: 'Todos', icon: '🍽️' },
+                    { id: 'entradas', name: 'Entradas', icon: '🥗' },
+                    { id: 'burgers', name: 'Burgers', icon: '🍔' },
+                    { id: 'principais', name: 'Principais', icon: '🥩' },
+                    { id: 'bebidas', name: 'Bebidas', icon: '🍹' },
+                    { id: 'sobremesas', name: 'Sobremesas', icon: '🍰' },
+                ],
+
+                products: [
+                    {
+                        id: 1,
+                        category: 'burgers',
+                        name: 'MesaByte Truffled Burger',
+                        description: 'Blend wagyu 180g, queijo brie maçaricado, bacon crocante, rúcula orgânica e maionese de trufas negras no pão brioche artesanal.',
+                        price: 54.90,
+                        time: '15-20 min',
+                        badge: 'Mais Vendido',
+                        image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80'
+                    },
+                    {
+                        id: 2,
+                        category: 'burgers',
+                        name: 'Cyber Bacon Crispy',
+                        description: 'Duplo smash burger 100g, cheddar cremoso inglês, cebola caramelizada no bourbon e bacon extra crispy.',
+                        price: 46.90,
+                        time: '12-18 min',
+                        badge: 'Destaque',
+                        image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80'
+                    },
+                    {
+                        id: 3,
+                        category: 'principais',
+                        name: 'Entrecôte com Fritas Trufadas',
+                        description: 'Corte noble de 300g grelhado ao ponto, acompanhado de batatas rústicas com azeite trufado e queijo parmesão gratinado.',
+                        price: 89.90,
+                        time: '20-25 min',
+                        badge: 'Chef Choice',
+                        image: 'https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80'
+                    },
+                    {
+                        id: 4,
+                        category: 'entradas',
+                        name: 'Tartare de Salmão Fresco',
+                        description: 'Salmão batido na ponta da faca, abacate cremoso, chips de batata doce artesanais e emulsão de limão siciliano.',
+                        price: 42.00,
+                        time: '10 min',
+                        badge: 'Novo',
+                        image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80'
+                    },
+                    {
+                        id: 5,
+                        category: 'bebidas',
+                        name: 'Gin Tônica Botânica Red Berries',
+                        description: 'Gin premium importado, tônica artesanal, infusão de frutas vermelhas silvestres, zimbro e alecrim fresco.',
+                        price: 36.00,
+                        time: '5 min',
+                        badge: 'Drink do Dia',
+                        image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80'
+                    },
+                    {
+                        id: 6,
+                        category: 'sobremesas',
+                        name: 'Cheesecake Red Velvet & Frutas Vermelhas',
+                        description: 'Base amanteigada crocante, creme aveludado de cream cheese e calda artesanal de frutas vermelhas frescas.',
+                        price: 28.50,
+                        time: '5 min',
+                        badge: 'Imperdível',
+                        image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80'
+                    }
+                ],
+
+                cart: [
+                    { id: 1, name: 'MesaByte Truffled Burger', price: 54.90, quantity: 1, notes: 'Ponto ao ponto' }
+                ],
+
+                orders: [],
+
+                // Helper function to format numbers into BRL currency format
+                formatMoney(value) {
+                    if (typeof value !== 'number' || isNaN(value)) return 'R$ 0,00';
+                    return new Intl.NumberFormat('pt-BR', {
+                        style: 'currency',
+                        currency: 'BRL'
+                    }).format(value);
+                },
+
+                get filteredProducts() {
+                    return this.products.filter(p => {
+                        const matchesCategory = this.selectedCategory === 'all' || p.category === this.selectedCategory;
+                        const matchesSearch = p.name.toLowerCase().includes(this.searchQuery.toLowerCase()) || p.description.toLowerCase().includes(this.searchQuery.toLowerCase());
+                        return matchesCategory && matchesSearch;
+                    });
+                },
+
+                get cartTotalItems() {
+                    return this.cart.reduce((sum, item) => sum + item.quantity, 0);
+                },
+
+                get cartTotalPrice() {
+                    return this.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                },
+
+                get finalTotalPrice() {
+                    let total = this.cartTotalPrice;
+                    if (this.includeTip) total += total * 0.1;
+                    return total;
+                },
+
+                init() {
+                    setTimeout(() => {
+                        lucide.createIcons();
+                    }, 100);
+                },
+
+                enterApp() {
+                    if (!this.customerName.trim()) {
+                        this.customerName = 'Visitante Mesa 04';
+                    }
+                    this.showWelcomeModal = false;
+                    this.showToast('Bem-vindo ao MesaByte! Mesa 04 conectada.');
+                    setTimeout(() => lucide.createIcons(), 50);
+                },
+
+                openCustomization(product) {
+                    this.activeProduct = product;
+                    this.customQuantity = 1;
+                    this.customNotes = '';
+                    this.showCustomModal = true;
+                    setTimeout(() => lucide.createIcons(), 50);
+                },
+
+                closeCustomModal() {
+                    this.showCustomModal = false;
+                    this.activeProduct = null;
+                },
+
+                addToCartFromModal() {
+                    if (!this.activeProduct) return;
+                    
+                    const existingIndex = this.cart.findIndex(item => item.id === this.activeProduct.id && item.notes === this.customNotes);
+                    
+                    if (existingIndex > -1) {
+                        this.cart[existingIndex].quantity += this.customQuantity;
+                    } else {
+                        this.cart.push({
+                            id: this.activeProduct.id,
+                            name: this.activeProduct.name,
+                            price: this.activeProduct.price,
+                            quantity: this.customQuantity,
+                            notes: this.customNotes
+                        });
+                    }
+
+                    this.showToast(`${this.customQuantity}x ${this.activeProduct.name} adicionado ao pedido!`);
+                    this.closeCustomModal();
+                },
+
+                updateCartQty(index, change) {
+                    this.cart[index].quantity += change;
+                    if (this.cart[index].quantity <= 0) {
+                        this.cart.splice(index, 1);
+                    }
+                },
+
+                submitOrder() {
+                    if (this.cart.length === 0) return;
+                    
+                    this.orders.push({
+                        items: [...this.cart],
+                        total: this.finalTotalPrice,
+                        time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+                    });
+
+                    this.cart = [];
+                    this.showCartDrawer = false;
+                    this.orderStatus = 1; // Recebido
+                    this.showTrackingModal = true;
+                    this.showToast('Pedido enviado para a cozinha com sucesso!');
+                    setTimeout(() => lucide.createIcons(), 50);
+                },
+
+                callWaiterAction(actionName) {
+                    this.openWaiterModal = false;
+                    this.showToast(`Solicitação enviada: ${actionName}. O garçom atenderá em instantes.`);
+                },
+
+                showToast(message) {
+                    this.toastMessage = message;
+                    setTimeout(() => {
+                        this.toastMessage = '';
+                    }, 4000);
+                }
+            }
+        }
+    </script>
+
+</body></html>
